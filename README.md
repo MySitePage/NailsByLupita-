@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -450,7 +450,7 @@
             max-height: 900px;
             background-image: 
                 linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('https://www.dropbox.com/scl/fi/4sqiwrylens0kuxa8uaki/MRSVOLUENTIC_.jpg?rlkey=752pxoorhed2n6vr14qb2r7rp&st=1xsxwk71&raw=1');
+                url('https://i.postimg.cc/bwzjSvZR/627255670_1173909131240330_7316169738484993715_n.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -1375,7 +1375,7 @@
             max-height: none;
             background-image: 
                 linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-                url('https://www.dropbox.com/scl/fi/4sqiwrylens0kuxa8uaki/MRSVOLUENTIC_.jpg?rlkey=752pxoorhed2n6vr14qb2r7rp&st=1xsxwk71&raw=1');
+                url('https://i.postimg.cc/bwzjSvZR/627255670_1173909131240330_7316169738484993715_n.jpg');
             background-size: cover;
             background-position: center;
             display: flex;
@@ -2606,7 +2606,7 @@
                     <p class="policy-text">Deposits are non-refundable unless I am unable to take you as a client. Rescheduling requires 24-hour notice.</p>
                 </div>
                 
-                .policy-item {
+                <div class="policy-item">
                     <h3 class="policy-title"><i class="fas fa-home"></i> Home-Based Service</h3>
                     <p class="policy-text">I am a home-based nail tech operating in Reidsville, GA. My services are professional, clean, and private.</p>
                 </div>
@@ -2841,23 +2841,32 @@
             }
         }
         
-        // YOUR ACTUAL NAIL ART IMAGES (15 unique images)
+        // UPDATED GALLERY IMAGES - Removed duplicates
         const galleryImageUrls = [
-            'https://i.postimg.cc/9XgY6ghw/Screenshot-2026-01-30-230948.png',
-            'https://i.postimg.cc/qBDxPDTN/Screenshot-2026-01-30-231010.png',
-            'https://i.postimg.cc/nVSGySJj/Screenshot-2026-01-30-231020.png',
-            'https://i.postimg.cc/VsZWxZ8b/Screenshot-2026-01-30-231038.png',
-            'https://i.postimg.cc/bYV97Vhb/Screenshot-2026-01-30-231058.png',
-            'https://i.postimg.cc/3rfFsfTF/Screenshot-2026-01-30-231110.png',
-            'https://i.postimg.cc/bYV97VhQ/Screenshot-2026-01-30-231134.png',
-            'https://i.postimg.cc/h4Z1kZBr/Screenshot-2026-01-30-231146.png',
-            'https://i.postimg.cc/xjp3wp25/Screenshot-2026-01-30-231200.png',
-            'https://i.postimg.cc/66bfkbXY/Screenshot-2026-01-30-231210.png',
-            'https://i.postimg.cc/XN1kR1b1/Screenshot-2026-01-30-231224.png',
-            'https://i.postimg.cc/PfVQgVj7/Screenshot-2026-01-30-231230.png',
-            'https://i.postimg.cc/mZpyvp4x/Screenshot-2026-01-30-231241.png',
-            'https://i.postimg.cc/zD2Fs2rs/Screenshot-2026-01-30-231306.png',
-            'https://i.postimg.cc/gkwHmyzM/Screenshot-2026-01-30-231319.png'
+            'https://i.postimg.cc/Dw2K4zSp/627384018_1942647099663600_3744627479791189766_n.jpg',
+            'https://i.postimg.cc/dVqKZ0h6/626747186_1221220859504106_2138710826512202915_n.jpg',
+            'https://i.postimg.cc/9QWjwfDt/625676171_2149809869090160_7097018864526227980_n.jpg',
+            'https://i.postimg.cc/0y8qKNzw/624616615_4307303146264470_1592381052179166246_n.jpg',
+            'https://i.postimg.cc/139ZVz80/625125352_1760548374917453_5828014600193247571_n.jpg',
+            'https://i.postimg.cc/rw8LRpD4/624076834_1386579445971161_1047162356152576032_n.jpg',
+            'https://i.postimg.cc/P5tkvqC8/624055125_1650462349652664_3121882702369509047_n.jpg',
+            'https://i.postimg.cc/8z1VfC7f/624006544_869216799352309_5202663131111653062_n.jpg',
+            'https://i.postimg.cc/Fsb4KSHV/623993435_1459828935503635_6201594924315747658_n.jpg',
+            'https://i.postimg.cc/150QzF3c/623927146_1395042878323650_5217430895682690208_n.jpg',
+            'https://i.postimg.cc/L6kpsP8k/623902619_1445127886956284_4543734574542145406_n.jpg',
+            'https://i.postimg.cc/5N5Vtz2v/623337872_925226209840927_4760115710787626252_n.jpg',
+            'https://i.postimg.cc/MK0SGBpV/623306771_3886623068137280_1055653756474540886_n.jpg',
+            'https://i.postimg.cc/Qxg3M7dc/622801740_1219338666384073_4707659806570586910_n.jpg',
+            'https://i.postimg.cc/Nf8c0XjH/622787282_921108987113631_4418947411473072378_n.jpg',
+            'https://i.postimg.cc/wT5pBNjR/622619196_1654819359225156_7706697036597783122_n.jpg',
+            'https://i.postimg.cc/xTG2dm1b/622589182_1528672561529629_171159386553262319_n.jpg',
+            'https://i.postimg.cc/Wbmv4Z1D/622563626_1234663815296849_6471075531677555625_n.jpg',
+            'https://i.postimg.cc/8PdSCvz7/621823805_648748821650275_75239199237555558_n.jpg',
+            'https://i.postimg.cc/L6kpsP85/621801243_883705711300163_1574290468273490074_n.jpg',
+            'https://i.postimg.cc/5N5Vtz2t/621386749_1392971985843475_9183049521079448082_n.jpg',
+            'https://i.postimg.cc/YqNHSFCj/621171453_1526806615088503_3055938230055969432_n.jpg',
+            'https://i.postimg.cc/sDPr2Wgg/621157249_3804674226506736_3162842448877440158_n.jpg',
+            'https://i.postimg.cc/gkyW0h2k/610691564_1932619460682017_3662799654470688596_n.jpg'
         ];
         
         // Page navigation system
