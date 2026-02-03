@@ -2535,7 +2535,7 @@
                             <i class="fas fa-gem"></i>
                         </div>
                         <h3 class="service-title">Nail Services</h3>
-                        <p class="service-description">Acrylic sets, custom nail art, fills, and removals. Beautiful, durable work done with care.</p>
+                        <p class="service-description">Polygel sets, custom nail art, fills, and removals. Beautiful, durable work done with care.</p>
                     </div>
                     
                     <div class="service-card">
@@ -2551,7 +2551,7 @@
                             <i class="fas fa-eye"></i>
                         </div>
                         <h3 class="service-title">Lash Services</h3>
-                        <p class="service-description">Eyelash extensions, fills, and maintenance. Enhance your natural beauty.</p>
+                        <p class="service-description">Eyelash extensions, clusters, fills, and maintenance. Enhance your natural beauty.</p>
                     </div>
                     
                     <div class="service-card">
@@ -2588,7 +2588,7 @@
                 
                 <div class="policy-item">
                     <h3 class="policy-title"><i class="fas fa-calendar-check"></i> Booking Requirements</h3>
-                    <p class="policy-text">A deposit is required to secure your appointment. No deposit means no appointment will be scheduled.</p>
+                    <p class="policy-text">A half booking deposit is required to secure your appointment. No deposit means no appointment will be scheduled.</p>
                 </div>
                 
                 <div class="policy-item">
@@ -2679,10 +2679,10 @@
                             <label for="service" class="form-label">Select Service</label>
                             <select id="service" class="form-control" required>
                                 <option value="" disabled selected>Choose a service</option>
-                                <option value="nails-acrylic">Acrylic Nails</option>
+                                <option value="nails-polygel">Polygel Nails</option>
                                 <option value="nails-custom">Custom Nail Art</option>
                                 <option value="toes">Toe Services</option>
-                                <option value="lashes">Lash Services</option>
+                                <option value="lashes">Lash Services (Extensions/Clusters)</option>
                                 <option value="piercings">Piercings</option>
                                 <option value="nails-fill">Nail Fill</option>
                                 <option value="nails-removal">Nail Removal</option>
@@ -2728,7 +2728,7 @@
                     
                     <div class="booking-instructions">
                         <p><strong>Important Information:</strong></p>
-                        <p>After submitting your booking request, you will receive a confirmation text or email within 24 hours. A deposit is required to secure your appointment time.</p>
+                        <p>After submitting your booking request, you will receive a confirmation text or email within 24 hours. A half booking deposit is required to secure your appointment time.</p>
                         <p>Please review our booking policies on the home page before submitting your request.</p>
                         
                         <div class="booking-contact-info">
@@ -3292,12 +3292,12 @@
                 '5pm': '5:00 PM'
             }[time];
             
-            // Service display names
+            // Service display names - UPDATED
             const serviceDisplay = {
-                'nails-acrylic': 'Acrylic Nails',
+                'nails-polygel': 'Polygel Nails',
                 'nails-custom': 'Custom Nail Art',
                 'toes': 'Toe Services',
-                'lashes': 'Lash Services',
+                'lashes': 'Lash Services (Extensions/Clusters)',
                 'piercings': 'Piercings',
                 'nails-fill': 'Nail Fill',
                 'nails-removal': 'Nail Removal',
@@ -3305,8 +3305,8 @@
                 'other': 'Other/Consultation'
             }[service];
             
-            // Create confirmation message
-            const confirmationMessage = `Thank you, ${firstName} ${lastName}!\n\n✅ Your booking request has been received.\n\n📋 Appointment Details:\n• Service: ${serviceDisplay}\n• Date: ${formattedDate}\n• Time: ${timeDisplay}\n• Contact: ${phone}, ${email}\n\n📝 Notes: ${notes || 'None provided'}\n\n📍 Location: Home-based service in Reidsville, GA\n\nYou will receive a confirmation text/email within 24 hours. A deposit is required to secure your appointment.\n\nFor questions, contact:\n📱 Phone: 912-401-3684\n📧 Email: cluptiaskyla@gmail.com\n📸 Instagram: @nailssbygloxn\n📘 Facebook: Lupita Castillo`;
+            // Create confirmation message - UPDATED with deposit info
+            const confirmationMessage = `Thank you, ${firstName} ${lastName}!\n\n✅ Your booking request has been received.\n\n📋 Appointment Details:\n• Service: ${serviceDisplay}\n• Date: ${formattedDate}\n• Time: ${timeDisplay}\n• Contact: ${phone}, ${email}\n\n📝 Notes: ${notes || 'None provided'}\n\n📍 Location: Home-based service in Reidsville, GA\n\nYou will receive a confirmation text/email within 24 hours. A half booking deposit is required to secure your appointment.\n\nFor questions, contact:\n📱 Phone: 912-401-3684\n📧 Email: cluptiaskyla@gmail.com\n📸 Instagram: @nailssbygloxn\n📘 Facebook: Lupita Castillo`;
             
             // Show confirmation modal
             showModal(confirmationMessage);
